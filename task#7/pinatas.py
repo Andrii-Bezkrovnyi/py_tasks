@@ -45,8 +45,6 @@ def max_candies(pinatas):
             # Track the maximum candies obtained.
             max_candy = max(max_candy, candies)
 
-        print(f"dp({left}, {right}) -> {max_candy}")
-
         return max_candy
 
     return dp(0, len(pinatas) - 1)
